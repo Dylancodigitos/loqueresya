@@ -14,7 +14,7 @@ const SESSION_DURATION = 24 * 60 * 60 * 1000; // 24 horas
 // Credenciales hardcodeadas (en producción usar variables de entorno)
 const CREDENCIALES = {
   usuario: process.env.ADMIN_USER || 'admin',
-  password: process.env.ADMIN_PASSWORD || 'admin123',
+  password: process.env.ADMIN_PASSWORD || 'dylan22',
 };
 
 export async function verificarCredenciales(usuario: string, password: string): Promise<boolean> {

@@ -37,6 +37,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="font-sans antialiased">
+        {/* --- BANNER DE PUBLICIDAD --- */}
+        <div className="w-full bg-black text-white text-center py-2 text-[10px] sm:text-xs font-bold uppercase tracking-widest border-b border-zinc-800">
+           🔥 Llevando 3 productos o más tenés un <span className="text-yellow-400">5% OFF</span> en tu total 🔥
+        </div>
+        {/* ---------------------------- */}
+        
         {children}
         <Analytics />
       </body>

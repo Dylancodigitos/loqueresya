@@ -58,14 +58,30 @@ export default function HomePage() {
       <Header />
       <WhatsAppButton phoneNumber="541122826793" />
 
-      {/* Hero animado - ancho completo */}
+      {/* Hero animado */}
       <HeroSection />
 
-      {/* Franja de features - ancho completo */}
+      {/* Franja de features */}
       <FeaturesStrip />
 
-      {/* Grid visual de categorias - ancho completo */}
+      {/* Grid visual de categorias */}
       <CategoryGrid onCategoriaClick={handleCategoriaClick} />
+
+      {/* --- BANNER DE PUBLICIDAD (DEBAJO DE CATEGORIAS) --- */}
+      <div className="w-full px-4 sm:px-8 lg:px-12 mt-8 mb-4">
+        <div className="max-w-7xl mx-auto bg-gradient-to-r from-blue-600 to-sky-400 rounded-2xl p-6 shadow-lg border border-sky-200 relative overflow-hidden flex flex-col md:flex-row items-center justify-between text-white">
+          <div className="z-10 text-center md:text-left mb-4 md:mb-0">
+            <h3 className="text-2xl font-black uppercase tracking-tighter italic">🔥 ¡PROMO IMPERDIBLE! 🔥</h3>
+            <p className="text-lg font-medium opacity-90">Llevando <span className="font-bold border-b-2 border-white">3 productos o más</span> tenés un</p>
+          </div>
+          <div className="z-10 bg-white text-blue-600 px-6 py-3 rounded-xl font-black text-4xl shadow-xl transform rotate-3 hover:rotate-0 transition-transform cursor-default">
+            5% OFF
+          </div>
+          {/* Decoración de fondo */}
+          <div className="absolute top-0 right-0 w-32 h-32 bg-white opacity-10 rounded-full -mr-10 -mt-10"></div>
+          <div className="absolute bottom-0 left-0 w-24 h-24 bg-sky-200 opacity-20 rounded-full -ml-10 -mb-10"></div>
+        </div>
+      </div>
 
       {/* Catalogo de productos */}
       <main
