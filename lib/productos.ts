@@ -14,24 +14,7 @@ export interface Producto {
 // Datos en memoria de productos
 let productos: Producto[] = [
   
-  {
-    id: '0',
-    nombre: 'Parlante JBL GO 3',
-    descripcion: 'Parlante de la marca JBL con tecnología de sonido de alta calidad. Diseño moderno y funcional para una experiencia de audio superior.',
-    precio: 30000,
-    precioMayorista: 24000,
-    cantidadMinimaMayorista: 3,
-    categoria: 'Parlantes',
-    imagenUrl: '/imagesproductos/go3/go3.webp',
-    imagenesAdicionales: [
-      '/imagesproductos/go3/go3.webp',
-      '/imagesproductos/go3/go31.png',
-      '/imagesproductos/go3/go32.webp',
-      '/imagesproductos/go3/go33.png',
-      '/imagesproductos/go3/mayor1.png',
-    ],
-    stock: 3,
-  },
+
   {
     id: '1',
     nombre: 'Parlante JBL Flip 6',
@@ -116,15 +99,15 @@ let productos: Producto[] = [
   },
   {
     id: '6',
-    nombre: 'Cargador + Cable Lightning Apple',
-    descripcion: 'Cargador de pared con cable Lightning 2M para dispositivos Apple. Potencia de 20W para una carga rápida y eficiente. Compatible con iPhone, iPad y AirPods.',
-    precio: 9000,
+    nombre: 'Cargador 20w + Cable Tipo C Apple',
+    descripcion: 'Cargador con cable Tipo C 1M para dispositivos Apple. Potencia de 20W para una carga rápida y eficiente. Compatible con iPhone, iPad y AirPods.',
+    precio: 10000,
     precioMayorista: 8000,
     cantidadMinimaMayorista: 3,
     categoria: 'Tecnologia',
-    imagenUrl: '/imagesproductos/combo2.webp',
+    imagenUrl: '/imagesproductos/combo3.png',
     imagenesAdicionales: [
-      '/imagesproductos/combo2.webp',
+      '/imagesproductos/combo3.png',
     ],
     stock: 3,
   },
@@ -133,7 +116,7 @@ let productos: Producto[] = [
     nombre: 'Maquina de Cortar Pelo Inalambrica',
     descripcion: 'Máquina de cortar pelo inalámbrica con batería recargable. Cuchillas de acero inoxidable para un corte preciso. Diseño ergonómico y fácil de usar para cortes en casa.',
     precio: 16000,
-    precioMayorista: 14000,
+    precioMayorista: 13000,
     cantidadMinimaMayorista: 3,
     categoria: 'Salud Y Belleza',
     imagenUrl: '/imagesproductos/maquina16.jpg',
@@ -415,13 +398,16 @@ let productos: Producto[] = [
     id: '26',
     nombre: 'Parlante ONICA 8 Pulgadas',
     descripcion: '',
-    precio: 38000,
+    precio: 40000,
     precioMayorista: 34000,
     cantidadMinimaMayorista: 2,
     categoria: 'Parlantes',
-    imagenUrl: '/imagesproductos/onica8.webp',
+    imagenUrl: '/imagesproductos/onica8.jpg',
     imagenesAdicionales: [
-      '/imagesproductos/onica8.webp',
+      '/imagesproductos/onica8.jpg',
+      '/imagesproductos/onica81.jpeg',
+      '/imagesproductos/onica82.png',
+      '/imagesproductos/onica83.jpg',
     ],
     stock: 3,
   },
@@ -443,6 +429,37 @@ let productos: Producto[] = [
     stock: 1,
   },
   
+  {
+    id: '28',
+    nombre: 'Cargador 20w + Cable Lightning Apple',
+    descripcion: 'Cargador de pared con cable Lightning 2M para dispositivos Apple. Potencia de 20W para una carga rápida y eficiente. Compatible con iPhone, iPad y AirPods.',
+    precio: 9000,
+    precioMayorista: 8000,
+    cantidadMinimaMayorista: 3,
+    categoria: 'Tecnologia',
+    imagenUrl: '/imagesproductos/combo2.webp',
+    imagenesAdicionales: [
+      '/imagesproductos/combo2.webp',
+    ],
+  },
+  {
+    id: '29',
+    nombre: 'Parlante JBL GO 3',
+    descripcion: 'Parlante de la marca JBL con tecnología de sonido de alta calidad. Diseño moderno y funcional para una experiencia de audio superior.',
+    precio: 30000,
+    precioMayorista: 24000,
+    cantidadMinimaMayorista: 3,
+    categoria: 'Parlantes',
+    imagenUrl: '/imagesproductos/go3/go3.webp',
+    imagenesAdicionales: [
+      '/imagesproductos/go3/go3.webp',
+      '/imagesproductos/go3/go31.png',
+      '/imagesproductos/go3/go32.webp',
+      '/imagesproductos/go3/go33.png',
+      '/imagesproductos/go3/mayor1.png',
+    ],
+    stock: 3,
+  },
 ];
 
 export function getProductos(): Producto[] {
